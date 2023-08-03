@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Page</title>
+    <style>
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form,
+input,
+textarea,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.speaker-card {
+    margin-bottom: 20px;
+}
+
+.speaker-card img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        width: 100%;
+    }
+}
+
+
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>Awesome Event 2023</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About the Event</h2>
+            <h3>Leadership and management </h3>
+            <p>
+            Leadership and management are critical components of any organization's success, whether it's a business, nonprofit,
+            government agency, or any other type of institution. Both leadership and management play distinct but complementary
+            roles in guiding and directing the efforts of individuals and teams towards achieving common goals.
+            </p>
+        </section>
+
+        <section id="schedule">
+            <h2>Event Schedule</h2>
+            <ul>
+                <li>Day 1: Discussion about <b>Leadership</b> </li>
+            
+                <li>Day 2: Discussion about <b>management</b></li>
+               
+            </ul>
+        </section>
+
+        <section id="speakers">
+            <h2>Speakers</h2>
+            <div class="speaker-card">
+                <img src="speaker1.jpg" alt="Speaker 1">
+                <h3>Suresh kumar</h3>
+                <p>CEO, Company A</p>
+            </div>
+            <div class="speaker-card">
+                <img src="speaker2.jpg" alt="Speaker 2">
+                <h3>Mahendran</h3>
+                <p>CTO, Company B</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Awesome Event. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

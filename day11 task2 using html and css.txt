@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+        }
+
+        input[type="file"] {
+            margin-top: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <form>
+            <!-- Personal Information -->
+            <h2>Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <!-- Multiple Choice -->
+            <h2>Multiple Choice</h2>
+            <label>What is your favorite pet?</label>
+            <input type="radio" id="cat" name="favorite_pet" value="cat" required>
+            <label for="cat">Cat</label>
+            <input type="radio" id="dog" name="favorite_pet" value="dog">
+            <label for="dog">Dog</label>
+            <input type="radio" id="bird" name="favorite_pet" value="bird">
+            <label for="bird">Bird</label>
+            <input type="radio" id="other_pet" name="favorite_pet" value="other_pet">
+            <label for="other_pet">Other</label>
+
+            <label>How often do you exercise?</label>
+            <input type="radio" id="daily" name="exercise_frequency" value="daily" required>
+            <label for="daily">Daily</label>
+            <input type="radio" id="weekly" name="exercise_frequency" value="weekly">
+            <label for="weekly">Weekly</label>
+            <input type="radio" id="monthly" name="exercise_frequency" value="monthly">
+            <label for="monthly">Monthly</label>
+            <input type="radio" id="rarely" name="exercise_frequency" value="rarely">
+            <label for="rarely">Rarely</label>
+
+            <!-- Single Choice -->
+            <h2>Single Choice</h2>
+            <label>Which programming language do you prefer?</label>
+            <select name="preferred_language" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="csharp">C#</option>
+                <option value="other_language">Other</option>
+            </select>
+
+            <!-- Text Inputs -->
+            <h2>Text Inputs</h2>
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+            <label for="suggestions">Any suggestions?</label>
+            <input type="text" id="suggestions" name="suggestions">
+
+            <!-- Range Input -->
+            <h2>Rating</h2>
+            <label for="rating">Rate our service (1-10):</label>
+            <input type="range" id="rating" name="rating" min="1" max="10">
+
+            <!-- Checkboxes -->
+            <h2>Checkboxes</h2>
+            <label>Which of these programming languages have you used?</label>
+            <input type="checkbox" id="javascript" name="languages_used[]" value="javascript">
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" id="python" name="languages_used[]" value="python">
+            <label for="python">Python</label>
+            <input type="checkbox" id="java" name="languages_used[]" value="java">
+            <label for="java">Java</label>
+            <input type="checkbox" id="csharp" name="languages_used[]" value="csharp">
+            <label for="csharp">C#</label>
+            <!-- Add more options as needed -->
+
+            <!-- File Upload -->
+            <h2>File Upload</h2>
+            <label for="resume">Upload your resume:</label>
+            <input type="file" id="resume" name="resume">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
